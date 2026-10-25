@@ -2,9 +2,15 @@
 
 A modern social media application built with Next.js 14, featuring user authentication, post creation with images, likes, comments, follows, and notifications.
 
+> **Repository Status:** This project has been uploaded to GitHub but has not yet been run locally or tested. The application requires environment configuration and database setup before it can run.
+
 **Note:** This application was originally developed as a tutorial project by Burak. Copyright © 2024 Burak. Licensed under MIT License.
 
-![Demo App](/public/screenshot-for-readme.png)
+## Application Preview
+
+The following image is a static screenshot for visual reference. It is not a live demo, and application functionality has not necessarily been verified.
+
+![Socially Home Screen](public/screenshot-for-readme.png)
 
 ## Table of Contents
 
@@ -74,13 +80,19 @@ The following features are commonly found in social media platforms but are **NO
 
 ## Project Status
 
-**Current Status:** Ready for environment configuration and testing
+**Current Status:** Repository uploaded to GitHub, but application not yet tested locally
+
+**Repository:** https://github.com/mrhasibuldev/x-media
+**Application Name:** Socially
+**Current Phase:** Repository presentation and documentation
+**Next Phase:** Local development setup and testing
 
 **IMPORTANT:**
 - ❌ Database migrations have NOT been generated
 - ❌ Application has NOT been tested with live services
 - ❌ Environment variables are NOT configured
 - ❌ Application build has NOT been verified
+- ❌ Application has NOT been run locally
 
 **Required Before Running:**
 1. Configure environment variables (Clerk, PostgreSQL, UploadThing)
@@ -88,7 +100,10 @@ The following features are commonly found in social media platforms but are **NO
 3. Install dependencies: `npm install`
 4. Test locally: `npm run dev`
 
+**Note:** The screenshot above shows the application interface from the original tutorial. The application in this repository has not been run locally yet, so the current appearance may differ.
+
 For detailed setup instructions, see [docs/LOCAL_DEVELOPMENT.md](docs/LOCAL_DEVELOPMENT.md).
+For a comprehensive future development roadmap, see [docs/FUTURE_ROADMAP.md](docs/FUTURE_ROADMAP.md).
 
 ## Prerequisites
 
@@ -169,6 +184,7 @@ Comprehensive documentation is available in the `docs/` directory:
 ### Features
 - [docs/AUTHENTICATION_GUIDE.md](docs/AUTHENTICATION_GUIDE.md) - Clerk authentication and authorization
 - [docs/MEDIA_STORAGE_GUIDE.md](docs/MEDIA_STORAGE_GUIDE.md) - UploadThing file storage
+- [docs/MEDIA_UPLOAD_CAPABILITIES_AND_ROADMAP.md](docs/MEDIA_UPLOAD_CAPABILITIES_AND_ROADMAP.md) - Image and video upload capabilities and future roadmap
 - [docs/API_REFERENCE.md](docs/API_REFERENCE.md) - Server Actions and API endpoints
 
 ### Operations
@@ -285,6 +301,86 @@ For a complete list of known issues, see [docs/KNOWN_ISSUES.md](docs/KNOWN_ISSUE
 ⚠️ No automated security scanning
 
 For detailed security information, see [docs/SECURITY.md](docs/SECURITY.md).
+
+## Future Roadmap
+
+This repository represents the foundation for a social media application. The current implementation includes core social features (authentication, posts, likes, comments, follows, notifications) but has not yet been tested locally.
+
+### Planned Development Phases
+
+**Phase A (Current):** Repository presentation, documentation, and license clarification
+- ✅ Comprehensive documentation created
+- ✅ GitHub repository uploaded
+- ✅ Readme improved
+- 📝 Future roadmap defined
+
+**Phase B:** Local development setup and dependency verification
+- Install dependencies
+- Verify build succeeds
+- Run linting and type checking
+- Resolve any build errors
+
+**Phase C:** Database configuration and schema review
+- Set up PostgreSQL database (local or cloud)
+- Run database migrations
+- Verify schema in Prisma Studio
+- Test database connectivity
+
+**Phase D:** Authentication and user profile verification
+- Configure Clerk authentication
+- Test sign up, sign in, sign out flows
+- Verify user profile functionality
+- Test profile editing
+
+**Phase E:** Core social features verification
+- Test post creation (text and images)
+- Test likes and comments
+- Test follow/unfollow
+- Test notifications
+- Verify feed functionality
+
+**Phase F:** Media improvements
+- Implement file deletion when posts are deleted
+- Consider video upload support
+- Optimize image handling
+
+**Phase G:** Additional features (as approved)
+- Search functionality
+- Repost/share functionality
+- Direct messages
+- Stories
+- Content moderation tools
+- User blocking/muting
+
+**Phase H:** Security, privacy, and testing
+- Implement rate limiting
+- Add input sanitization
+- Set up automated testing
+- Implement security scanning
+- Add content moderation
+
+**Phase I:** Deployment and maintenance
+- Deploy to production (Vercel recommended)
+- Set up monitoring
+- Configure backups
+- Establish maintenance procedures
+
+### Missing Features
+
+The following features are commonly found in social media platforms but are **NOT** currently implemented:
+
+- ❌ Video uploads (only images supported)
+- ❌ Search functionality
+- ❌ Direct messages
+- ❌ Stories
+- ❌ Reposts/shares
+- ❌ Content moderation tools
+- ❌ Admin panel
+- ❌ User blocking
+- ❌ Subscriptions/payments
+- ❌ Bookmarking
+
+For a detailed roadmap with validation criteria and risks, see [docs/FUTURE_ROADMAP.md](docs/FUTURE_ROADMAP.md).
 
 ## License
 
